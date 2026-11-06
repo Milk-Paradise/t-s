@@ -1,0 +1,19 @@
+{
+  "name": "project-desk-server",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "pg-promise": "^12.2.0",
+    "zod": "^4.1.0"
+  },
+  "engines": {
+    "node": ">=22.12"
+  }
+}

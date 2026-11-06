@@ -1,0 +1,11 @@
+import express from "express";
+import { projectsRouter } from "./routes/projects.js";
+import { tasksRouter } from "./routes/tasks.js";
+import { errorHandler } from "./middleware/errors.js";
+export const app = express();
+app.disable("x-powered-by");
+app.use(express.json({ limit: "32kb" }));
+app.use("/api/projects", projectsRouter);
+app.use("/api/tasks", tasksRouter);
+app.use((req, res) => res.status(404).json({ message: "Маршрут не найден" }));
+app.use(errorHandler);

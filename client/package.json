@@ -1,0 +1,25 @@
+{
+  "name": "project-desk-client",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "ag-grid-community": "^34.3.0",
+    "ag-grid-react": "^34.3.0",
+    "zustand": "^5.0.8",
+    "lucide-react": "^0.468.0"
+  },
+  "devDependencies": {
+    "vite": "^7.1.7",
+    "@vitejs/plugin-react": "^5.0.4"
+  },
+  "engines": {
+    "node": ">=22.12"
+  }
+}
